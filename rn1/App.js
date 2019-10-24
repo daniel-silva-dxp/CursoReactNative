@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 import styled from 'styled-components/native'; //Importando o styled-components
 
-//Styled Components
+//Criando Styled Components
 const Paragraph = styled.Text`
   color:#FFF;
   font-size:30px;
