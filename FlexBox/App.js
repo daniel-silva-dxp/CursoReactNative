@@ -3,54 +3,40 @@ import styled from 'styled-components/native';
 
 
 const Container = styled.SafeAreaView`
-flex:1;
-  background-color:#00AC9E;
-  align-items:center;
-  justify-content:center;
-  padding: 8px;
+  flex:1;
+  background-color: #F8F8F8;
 `;
 
-const Content = styled.View`
-  flex:1;
-  flex-direction:row;
-  background-color:#00AC9E;
-  align-items:center;
-  justify-content:center;
-  padding: 8px;
+const Header = styled.View`
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 150px;
 `;
 
 const Box = styled.View`
-  width:50px;
-  height:50px;
-  background-color:${props=>props.cor};;
-`;
-
-const Brandi = styled.Text`
-  margin:5px;
-  font-size:30px;
-  font-weight:bold;
-  text-align:center;
-  color:#FFF45A
-`;
-
-const Paragraph = styled.Text`
-  margin: 5px;
-  font-size: 10px;
-  text-align: center;
-  color:#FFF;
+  width: 50px;
+  height: 50px;
+  background-color: ${props=>props.cor};;
 `;
 
 export default () => {
   return (
-
     <Container>
-      <Brandi>DXPWeb Production</Brandi>
-      <Paragraph>CRIADORES DE SITES DE CLASSE MUNDIAL</Paragraph>
-      <Content>
+      <Header>
         <Box cor="#FFF45A"></Box>
-        <Box cor="#FFFF"></Box>
+        <Box cor="#00AC9E"></Box>
         <Box cor="#8B0265"></Box>
-      </Content>      
+        <Box cor="#FFF45A"></Box>
+        <Box cor="#00AC9E"></Box>
+        <Box cor="#8B0265"></Box>
+        <Box cor="#FFF45A"></Box>
+        <Box cor="#00AC9E"></Box>
+        <Box cor="#8B0265"></Box>
+      </Header>
     </Container>
   )
 }
